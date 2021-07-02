@@ -1,0 +1,259 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MAIN CODE */
+
+:root{
+    --border1: 2px solid black;
+    --border1-radius: 2rem;
+    --violet: rgba(133, 0, 122, 0.822);
+    --dark-blue: rgba(27, 24, 121, 0.788);
+    --hover-color: #0CFFF8;
+    --focus-color:#CA01F0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: "Convergence", sans-serif;
+    color: white;
+    width:100%;
+    min-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(0deg, rgba(133, 0, 122, 0.822) 0%, rgba(27, 24, 121, 0.788) 100%),
+    url(https://cdn.pixabay.com/photo/2011/12/14/12/13/city-11087_1280.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#survey-form,
+#div-title,
+#description,
+h1,
+textarea{
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+#survey-form,
+.input-form,
+textarea,
+#description,
+#submit{
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+#div-title{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.div-form,
+.div-form2,
+.div-form3 textarea,
+#submit{
+    width: 50%;
+    min-width: 280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-form,
+textarea,
+button{
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: var(--border1);
+    border-radius: var(--border1-radius);
+    background: none;
+    color: white;
+    padding-left: 1rem;
+    margin: 1rem auto;
+}
+
+.input-form:hover,
+textarea:hover{
+    border-color: var(--hover-color);
+}
+.input-form:focus,
+textarea:focus{
+    border-color: var(--focus-color);
+}
+
+.label-form{
+    position: absolute;
+    top: 1.7rem;
+    left: 2rem;
+    cursor: text;
+    transition:top 200ms ease-in,
+	font-size 200ms ease-in;
+}
+
+.input-form:focus ~ .label-form,
+.input-form:not(:placeholder-shown).input-form:not(:focus) ~ .label-form{
+    top: -0.7rem;
+    font-size: 0.7rem;
+    border-radius: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    position: relative;
+    right: 0.5rem;
+  }
+
+.div-form2{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button,
+select{
+    margin: 0px ;
+}
+
+.div-form2 p,
+.div-form2 label,
+.div-form2 label input,
+.div-form3 textarea{
+    margin: 1rem auto;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 6rem;
+    
+}
+
+#submit{
+    transition: color 200ms ease-in, background-color 200ms ease-in;
+}
+#submit:hover{
+    background-color: var(--hover-color);
+    color: black;
+}
+
+#dropdown option{
+    color: black;
+}
