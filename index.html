@@ -1,0 +1,93 @@
+<html>
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1>
+	<link rel="stylesheet" type="text/css" href="survey-page-3.css">
+	<link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey-page.css">
+</head>
+
+<body>
+    <!-- Title and description -->
+    <div id="div-title">
+        <h1 id="title">My survey</h1>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lorem ac mauris commodo, id eleifend mi suscipit. Integer consequat at neque dapibus eleifend.</p>
+    </div>
+
+    <!-- Name, email, age -->
+    <form id="survey-form">
+        <div class="div-form">
+            <input type="text" name="name" id="name" class="input-form" autocomplete="off" placeholder=" " required>
+            <label for="name" id="name-label" class="label-form">Name</label>
+        </div>
+        <div class="div-form">
+            <input type="email" name="email" id="email" class="input-form" autocomplete="off" placeholder=" " required>
+            <label for="email" id="email-label" class="label-form">E-mail</label>
+        </div>
+        <div class="div-form">
+            <input type="number" name="number" id="number" class="input-form" placeholder=" " min="10" max="99">
+            <label for="age" id="number-label" class="label-form">Age</label>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="div-form2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+			<select name="dropdown" id="dropdown" class="input-form" required>
+                <option disabled selected value>Select current value</option>
+				<option value="#1">Lorem</option>
+				<option value="#2">ipsum</option>
+				<option value="#3">dolor</option>
+				<option value="#4">sit amet</option>
+            </select>
+		</div>
+
+        <!-- Radio -->
+        <div class="div-form2">
+            <p>Suspendisse in ex pellentesque, efficitur dolor quis, consequat neque?</p>
+            <label>
+                <input name="choose-one" value="1" type="radio" class="input-form2" checked/>
+                Lorem
+            </label>
+            <label>
+                <input name="choose-one" value="2" type="radio" class="input-form2"/>
+                ipsum
+            </label>
+            <label>
+                <input name="choose-one" value="3" type="radio" class="input-form2"/>
+                dolor
+            </label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="div-form2">
+            <p>Donec bibendum egestas felis, sed tristique leo eleifend ut?</p>
+            <label>
+                <input name="choose-multiple" value="4" type="checkbox" class="input-form2"/>
+                Cras
+            </label>
+            <label>
+                <input name="choose-multiple" value="5" type="checkbox" class="input-form2"/>
+                facilisis
+            </label>
+            <label>
+                <input name="choose-multiple" value="6" type="checkbox" class="input-form2"/>
+                turpis
+            </label>
+        </div>
+
+        <!-- Textarea -->
+        <div class="div-form3">
+			<p>Vestibulum id ipsum diam?</p>
+			<textarea name="comments" placeholder="Enter your comment here..."></textarea>
+		</div>
+
+        <!-- Submit button -->
+        <div id="div-button">
+            <button type="submit" id="submit">
+                Submit
+        </div>
+
+    </form>
+</body>
